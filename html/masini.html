@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RentIT</title>
+        <link type="text/css" rel='stylesheet' href="/css/pagini.css" >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- Navigatie -->
+        <nav>
+          <a href="index.html"> <img class="logoph" src="/poze/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a class="nbutton" href="firma.html">Firma</a></li>
+                <li><a class="nbutton" href="masini.html">Masini</a></li>
+                <li><a class="nbutton" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburgermenu">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="menu">
+              <a class="button menuItem" href="index.html">Acasa</a>
+              <a class="button menuItem" href="firma.html">Firma</a>
+              <a class="button menuItem" href="masini.html">Masini</a>
+              <a class="button menuItem" href="contact.html">Contact</a>
+            </div>
+            <button class="hamburger">
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
+  
+            <script>
+              const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+  
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+  
+  hamburger.addEventListener("click", toggleMenu);
+            </script>
+  
+         </div>
+        <h1 class='prim'>O gama variata de automobile accesibile pentru oricine</h1>
+        <!-- Avantaje cu bg audi -->
+        <div class="audibg"> 
+          <div class='row'>
+            <div class='column'>
+                <img class='locicon' src='/icons/LocIcon.png' alt='icon'>
+                <p> Predare si preluare <br> de oriunde</p>
+            </div>
+            <div class='column'>
+                <img class='handicon' src='/icons/HandIcon.png' alt='icon'>
+                <p> Fara avans <br> la rezervare</p>
+            </div>  
+            <div class='column'>
+                <img class='caricon' src='/icons/CarIcon.png' alt='icon'>
+                <p> Gama variata <br> de masini</p>
+            </div>
+            <div class='column'>
+                <img class='monicon' src='/icons/MoneyIcon.png' alt='icon'>
+                <p> Plata fixa, TVA, RCA <br> si Casco incluse</p>
+            </div>
+          </div>
+        </div>
+        <h1 class='lowcost'> Gama Low-cost</h1>
+        <div class="rowm">
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/dacia.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="logan.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Dacia Logan</h2>
+              <p class='p1'><span style="color: #FDC029">100</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">650</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2019</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>1.0 TCE</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Benzina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/ford focus.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="focus.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Ford Focus</h2>
+              <p class='p1'><span style="color: #FDC029">130</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">700</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2016</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>1.4 FSI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Benzina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/vw golf 7.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="golf.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >VW Golf 7</h2>
+              <p class='p1'><span style="color: #FDC029">150</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">750</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2017</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>1.6 TDI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Diesel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class='lowcost'> Gama Premium</h1>
+        <div class="rowm">
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/ford ecosport.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="fordeco.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Ford EcoSport</h2>
+              <p class='p1'><span style="color: #FDC029">170</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">850</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2019</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>1.0 EcoS</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Benzina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/skoda rapid.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="skoda.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Skoda Rapid</h2>
+              <p class='p1'><span style="color: #FDC029">200</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">1000</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2019</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>1.4 TSI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Benzina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/vw passat.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="passat.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >VW Passat</h2>
+              <p class='p1'><span style="color: #FDC029">220</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">1100</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2018</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>2.0 TDI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Diesel</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h1 class='lowcost'> Gama Luxury</h1>
+        <div class="rowm">
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/mercedes benz gle.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="gle.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Mercedes-Benz GLE</h2>
+              <p class='p1'><span style="color: #FDC029">310</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">1600</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2020</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>3.0 CDI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Benzina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/cupra formentour.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="cupra.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Cupra Formentor</h2>
+              <p class='p1'><span style="color: #FDC029">280</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">1400</span> RON/6 Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2021</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>1.5 TSI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Hybrid</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="columnm">
+            <div class='card'>
+              <img class='pmasina' src='/poze/mercedes e300.jpg' alt='poza masina'>
+              <a class="inchiriazab" href="mercedese.html">Inchiriaza acum</a>
+              <h2 class="titlucard" >Mercedes-Benz E200</h2>
+              <p class='p1'><span style="color: #FDC029">300</span> RON/Zi </p>
+              <p class='p2'><span style="color: #FDC029">1500</span> RON/6Zile </p>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons micon">directions_car</i>
+                  <p class='iconsdet'>2020</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">build</i>
+                  <p class='iconsdet'>2.5 FSI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons micon">local_gas_station</i>
+                  <p class='iconsdet'>Benzina</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Footer-->
+        <div class="footer"> 
+          <div class='row'>
+            <div class='column2'>
+                <img class='logof' src='/poze/logo.png' alt='poza vaca'>
+                <p> Alege inteligent </p>
+            </div>
+            <div class='column'>
+              <p> Autovehicule populare:</p>
+              <a class="buttonft" href="gle.html">Mercedes GLE</a>
+              <a class="buttonft" href="passat.html">VW Passat</a>
+              <a class="buttonft" href="logan.html">Dacia Logan</a>
+              <a class="buttonft" href="focus.html">Ford Focus</a>
+          </div> 
+            <div class='column'>
+                <p> Link-uri utile:</p>
+                <a class="buttonft" href="contact.html">Contact</a>
+                <a class="buttonft" href="masini.html">Masini</a>
+                <a class="buttonft" href="firma.html">Firma</a>
+                <a class="buttonft" href="index.html">Acasa</a>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+            </div>
+            <div class='column2'>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/TelConIcon.png' alt='icon'>
+                <p> Telefon: 0755 123 456</p>
+              </div>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/MailConIcon.png' alt='icon'>
+                <p> E-mail: rentit@gmail.ro</p>
+              </div>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/LocIcon.png' alt='icon'>
+                <p> Calea Succesului nr. 19 <br>Oradea Bihor</p>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <p class='copyright'> Copyright webtim.srl </p>
+          </div>
+        </div>    
+    </body>
+</html>

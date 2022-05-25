@@ -1,0 +1,601 @@
+body{
+    font-family: 'Quicksand';
+    margin: 0%;
+    background-color: #E5E5E5;
+}
+
+/* Navigation bar */
+
+nav{
+    width: 100%;
+    height: 3em;
+    background-color: #000000;
+    font-size: 37px;
+    position: relative;
+}
+
+.logoph{
+    padding: 0.7em;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    float: right;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+nav ul a{
+    display: flex;
+    color: white;
+    text-align: center;
+    padding: 0.75em;
+    align-items: center;
+    text-decoration: underline;
+    text-decoration-color: #FDC029;
+}
+
+/* text si poza */               /* PAGINA FIRMA*/
+
+.desc{ 
+    font-size: 40px;
+    margin-left:3em;
+    margin-right: 0.5em;
+    padding-top:10px;
+
+}
+.descp{
+    margin-top:40px;
+    width:35em;
+    height:30em;
+    border-style: solid;
+    border-width: 1px;
+   
+}
+ .row {
+    display: flex;
+  }
+  
+.column {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.desc2{ 
+    font-size: 40px;
+    margin-left:1em;
+    margin-right: 0.5em;
+    padding-top:10px;
+
+}
+.descp2{
+    margin-top:40px;
+    margin-bottom: 4em;
+    width:30em;
+    height:30em;
+    border-style: solid;
+    border-width: 1px;
+   
+}
+ .row2 {
+    display: flex;
+  }
+  
+.column2 {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.prim{
+    text-align: center;
+    text-decoration:overline;
+    text-decoration-color : #FDC029;
+}
+.lowcost{
+    text-align: left;
+    padding-left:7.3em;
+    text-decoration:overline underline;
+    text-decoration-color : #FDC029;    
+}
+/* background audi*/                             /* PAGINA MASINI*/
+
+.audibg{
+    
+    width:70%;
+    height: 12em;
+    object-position: 100% 0;  
+    background: url('/poze/audibg.jpg') ; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: grayscale(30%);
+    display: block;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px; 
+    
+}
+
+
+.locicon{
+    padding-top: 1em;
+    padding-bottom: 2em;
+    width: 70px;
+    height: 80px;
+}
+.handicon{
+    padding-top: 0em;
+    padding-bottom: 0em;
+    width: 120px;
+    height: 130px;
+}
+.caricon{
+    padding-top: 0.2em;
+    padding-bottom: 0em;
+    width: 170px;
+    height: 130px;
+}
+.monicon{
+    padding-top: 1.5em;
+    padding-bottom: 0.5em;
+    width: 90px;
+    height: 100px;
+}
+
+.audibg .row{
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.audibg .column{
+    flex: 10%;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+
+.audibg p{
+    padding-top: 0;
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    color: #ffffff;
+    margin: 0 auto;  
+}
+/* rand masini*/
+
+.rowm{
+    width: 80%;
+    height: 500px;
+    display:flex;
+    margin:auto
+}
+
+.columnm{
+    height: 500px;
+    width:33.33%;
+    display: flex;
+
+}
+/* continut card*/
+.card{
+    width:400px;
+    height:430px;
+    margin: auto;
+    margin-top: 1.5em;
+    background-color: #ffffff;
+
+}
+
+.pmasina{
+    width:90%;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    margin-top: 1em;
+    z-index:1;
+}
+
+.inchiriazab{
+    font-weight: bold;
+    background-color: #FDC029;
+    color: rgb(12, 12, 12);
+    padding: 5px 13px;
+    text-decoration: none;
+    font-size: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin-left: 5em;
+    margin-right: 5em;
+    margin-top: -1em;
+    z-index:6;
+}
+.inchiriazab:hover{
+    background-color: #b48102;
+}
+.titlucard{
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    margin-top:0.35em;
+    margin-bottom: 0px;
+}
+.p1{
+    font-weight: 700;
+    padding-left: 2em;
+    float:left;
+    font-size: 20px;
+}
+.p2{
+    font-weight: 700;
+    padding-right: 2em;
+    float:right;
+    font-size: 20px;
+}
+.jos{
+    width:100%;
+    height:50px;
+    background-color: #FDC029;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    text-align:center;
+    justify-content: center;
+    border-style: solid;
+    border-width: 1px;
+
+}
+
+.nvl{
+    height: 50px;
+    width: 33.33%;
+}
+.vl {
+    border-left: 2px solid rgb(0, 0, 0);
+    height: 50px;
+    width: 33.33%;
+  }
+.micon{
+    margin-top: 0.6em;
+    margin-left: 0.3em;
+    float: left;
+}
+.iconsdet{
+    font-weight: 700;
+   margin-right: 1.5em;
+}
+/* coloane poza detalii*/                                  /* PAGINA Contact*/
+
+.rowcont{
+    width:90%;
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.colcont{
+    width:50%;
+    float: left;
+    padding-top: 4em;
+}
+.colcont h1{
+    margin-left: 6em;
+    margin-bottom: 1em;
+    font-size:40px;
+    text-decoration: underline;
+    text-decoration-color: #FDC029;
+}
+
+.pfirma{
+    width:70%;
+    height: 70%;
+    margin-top: 3em;
+}
+.cicon{
+    float: left;
+    margin-left: 7em;
+    font-size:40px;
+}
+.ctext{
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 11em;
+}
+/* formular*/
+.contform h1{
+    margin-left: 6em;
+    margin-bottom: 1em;
+    font-size:40px;
+    text-decoration: underline;
+    text-decoration-color: #FDC029;
+}
+.contform{
+    width: 100%;
+    float: left;
+}
+.colf{
+    width:50%;
+    float:left;
+}
+.fcname{
+    font-weight: 700;
+    font-size: 25px;
+    float: left;
+    width: 100%;
+    margin-left: 12em;
+    margin-right: 14em;
+}
+.fcspace{
+    width: 30%;
+    font-size: 20px;
+    background-color: #E5E5E5;
+    padding: 0.4em 1em;
+    margin-left: 14em;
+    margin-right: 14em;
+    margin-bottom: 1em;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    text-align: center;
+}
+.fcspace:hover{
+    background-color: #c5c5c5;
+
+}
+.txtname{
+    font-weight: 700;
+    font-size: 25px;
+    float: left;
+    width: 100%;
+    margin-left: 12em;
+    margin-right: 14em;
+}
+.txtspec{
+    width: 65%;
+    font-size: 20px;
+    background-color: #E5E5E5;
+    padding: 0.4em 1em;
+    margin-left: 14em;
+    margin-right: 14em;
+    margin-bottom: 1em;
+    float: left;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+.txtspec:hover{
+    background-color: #c5c5c5;
+
+}
+.subb{
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 30px;
+    background-color: #FDC029;
+    padding: 0.4em 1em;
+    font-size: 20px;
+    float: right;
+    margin-right: 16em;
+    margin-bottom: 3em;
+    width: 10%
+}
+.subb:hover{
+    background-color: #b48102;
+
+}
+/*harta*/
+.harta{
+    width:100%;
+    height:400px;
+}
+/* footer */
+.footer{
+    background-color: #000000;
+    width:100%;
+    height: 15em ;
+}
+
+.footer .row{
+    display:flex;
+    position: relative;
+    color: #ffffff;
+}
+
+.footer .column{
+    width:20%;
+    height: 200px;
+    overflow: auto;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+
+.footer .column2{
+    width: 30%;
+    height: 200px;
+    overflow: auto;
+    color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.rand1{
+    margin:  auto;
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+.rand1 p{
+    color: #ffffff;
+    margin: 0 auto;
+    margin-left:25px;
+}
+
+
+.buttonft{
+    color: #ffffff;
+    text-decoration: none;
+}
+.buttonft:hover{
+    background-color: #585858;
+}
+.footer .imgcont{
+    width: 30px;
+    height: 30px;
+
+    margin-left:30%;
+}
+
+.logof{
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+.copyright{
+    margin: 0 auto;
+}
+@media only screen and (min-width:700px){
+    .hamburger{
+        display: none;
+    }
+    .hamburgermenu{
+        display: none;
+    }
+}
+@media only screen and (max-width:950px){
+    nav{
+        height: 7em;
+    }
+    .logoph{
+        margin-right: 5em;
+    }
+    .blines .row{
+        display:initial;
+        width: 100%;
+        float: left;
+    }
+    .blines .column{
+        width: 100%;
+        margin-bottom: 1em;;
+
+    }
+    td{
+        display: initial;
+    }
+    .rezerva{
+        height: 37em;
+        text-align: center;
+        margin: auto;
+    }
+    h3{
+        margin-bottom: 1.7em;
+    }
+}
+@media only screen and (max-width:700px){
+    nav{
+        height:3em;
+    }
+    li{
+        display:none;
+    }
+    .footer{
+        height: 52em;
+    }
+    .footer .row{
+        width:100%;
+        display:initial;
+    }
+    .footer .column{
+        width: 100%;
+        float: left;
+        
+    }
+    .footer .column2{
+        width: 100%;
+        float: left;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: black solid 1px;
+        background: #FDC029;
+      cursor: pointer;
+    }
+    
+    .closeIcon {
+        display: none;
+    }
+    .menu {
+        position: fixed;
+        transform: translateY(-100%);
+        transition: transform 0.2s;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: rgba(1, 1, 10);
+        color: #FDC029;
+        list-style: none;
+        padding-top: 4rem;
+    } 
+      
+    .showMenu {
+        transform: translateY(0);
+    }
+    .button{
+        
+            font-weight: bold;
+            background-color: #FDC029; 
+            color: rgb(24, 24, 24);
+            padding: 10px 30px;
+            text-decoration: none;
+            font-size: 15px;
+            margin: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; 
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 30px; 
+    }
+    .blines .row{
+        display:initial;
+        width: 100%;
+        float: left;
+    }
+    .blines .column{
+        width: 100%;
+        margin-bottom: 1em;;
+
+    }
+}

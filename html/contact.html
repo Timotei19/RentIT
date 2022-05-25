@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RentIT</title>
+        <link type="text/css" rel='stylesheet' href="/css/pagini.css" >
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    </head>
+    <body>
+        <!-- Navigatie -->
+        <nav>
+          <a href="index.html"> <img class="logoph" src="/poze/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a class="nbutton" href="firma.html">Firma</a></li>
+                <li><a class="nbutton" href="masini.html">Masini</a></li>
+                <li><a class="nbutton" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburgermenu">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="menu">
+              <a class="button menuItem" href="index.html">Acasa</a>
+              <a class="button menuItem" href="firma.html">Firma</a>
+              <a class="button menuItem" href="masini.html">Masini</a>
+              <a class="button menuItem" href="contact.html">Contact</a>
+            </div>
+            <button class="hamburger">
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
+  
+            <script>
+              const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+  
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+  
+  hamburger.addEventListener("click", toggleMenu);
+            </script>
+  
+         </div>
+        <!--2col detalii contact si imagine-->
+        <div class='rowcont'>
+          <div class='colcont'>
+            <h1 >Contact</h1>
+            <div>
+              <i class="material-icons cicon" style="font-size:36px; ">call</i>
+              <p class='ctext'>Telefon: 0755 123 456</p><br>
+            </div>
+            <div>
+              <i class="material-icons cicon" style="font-size:36px">email</i>
+              <p class='ctext'>E-mail: rentit@gmail.ro</p><br>
+            </div>
+            <div>
+              <i class="material-icons cicon" style="font-size:36px">location_on</i>
+              <p class='ctext'>Calea Succesului, nr. 19, Oradea, Bihor</p><br>
+            </div>
+          </div>
+          <div class='colcont'>
+            <img class='pfirma' src='/poze/contact.jpg' alt='poza'>
+          </div>
+        <!-- formular -->
+     
+          <form class="contform" name="myForm" action="demo_form.asp"
+          onsubmit="return validateForm()" method="post">
+            <h1 >Lasa-ne un mesaj</h1>
+            <div class='colf'>
+              <label for="fname" class='fcname'>Nume:</label><br>
+              <input type="text" id="fname" name="fname" class='fcspace'><br>
+              <label for="fname" class='fcname'>Telefon:</label><br>
+              <input type="text" id="fname" name="ftel" class='fcspace'><br>
+            </div>
+            <div class='colf'>
+              <label for="fname" class='fcname'>Prenume:</label><br>
+              <input type="text" id="fname" name="fname" class='fcspace'><br>
+              <label for="fname" class='fcname'>E-mail:</label><br>
+              <input type="text" id="fname" name="femail" class='fcspace'><br>
+            </div>
+            <label for="review" class='txtname'>Specificatii suplimentare:</label>
+            <textarea id="review" name="review" rows="4" cols="50" class='txtspec'></textarea><br>
+            <input type="submit" value="Submit" class="subb">
+          </form>
+          <script>
+            function validateForm() {
+                var x = document.forms["myForm"]["fname"].value;
+                if (x == null || x == "") {
+                    alert("Nume fields must be filled out");
+                    return false;
+                }
+                var x = document.forms["myForm"]["fname"].value;
+                if (x == null || x == "") {
+                    alert("E-mail fields must be filled out");
+                    return false;
+                }
+                var x = document.forms["myForm"]["ftel"].value;
+                if (x == null || x == "") {
+                    alert("E-mail fields must be filled out");
+                    return false;
+                }
+                var x = document.forms["myForm"]["femail"].value;
+                if (x == null || x == "") {
+                    alert("E-mail fields must be filled out");
+                    return false;}
+                    else{
+                      alert("trimis");
+                    return true;
+                    }
+                
+                
+            }
+            </script>
+        <!-- Harta -->
+        <div id="googleMap" class="harta"></div>
+          <script>
+            function myMap() {
+            var mapProp= {
+              center:new google.maps.LatLng(47.06667, 21.93333),
+              zoom:15,
+            };
+            var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+            }
+            </script>
+            
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC35CBYW8KqqeY_BM3HTAKNBUiouasZiYw&callback=myMap"></script>
+          </div>
+            <!--Footer-->
+            <div class="footer"> 
+              <div class='row'>
+                <div class='column2'>
+                    <img class='logof' src='/poze/logo.png' alt='poza vaca'>
+                    <p> Alege inteligent </p>
+                </div>
+                <div class='column'>
+                    <p> Autovehicule populare:</p>
+                    <a class="buttonft" href="inchiriat.html">Mercedes</a>
+                    <a class="buttonft" href="inchiriat.html">Audi</a>
+                    <a class="buttonft" href="inchiriat.html">Logan</a>
+                    <a class="buttonft" href="inchiriat.html">Ford</a>
+                </div>  
+                <div class='column'>
+                    <p> Link-uri utile:</p>
+                    <a class="buttonft" href="contact.html">Contact</a>
+                    <a class="buttonft" href="masini.html">Masini</a>
+                    <a class="buttonft" href="firma.html">Firma</a>
+                    <a class="buttonft" href="index.html">Acasa</a>
+                </div>
+                <div class='column2'>
+                  <div class='rand1'>
+                    <img class='imgcont' src='/icons/TelConIcon.png' alt='icon'>
+                    <p> Telefon: 0755 123 456</p>
+                  </div>
+                  <div class='rand1'>
+                    <img class='imgcont' src='/icons/MailConIcon.png' alt='icon'>
+                    <p> E-mail: rentit@gmail.ro</p>
+                  </div>
+                  <div class='rand1'>
+                    <img class='imgcont' src='/icons/LocIcon.png' alt='icon'>
+                    <p> Calea Succesului nr. 19 <br>Oradea Bihor</p>
+                  </div>
+                </div>
+              </div>
+              <div class='row'>
+                <p class='copyright'> Copyright webtim.srl </p>
+              </div>
+            </div>    
+        </body>
+    </html>

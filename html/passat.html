@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RentIT</title>
+        <link type="text/css" rel='stylesheet' href="/css/inchirieri.css" >
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!-- Navigatie -->
+        <nav>
+            <a href="index.html"> <img class="logoph" src="/poze/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a class="nbutton" href="firma.html">Firma</a></li>
+                <li><a class="nbutton" href="oferte.html">Oferte</a></li>
+                <li><a class="nbutton" href="masini.html">Masini</a></li>
+                <li><a class="nbutton" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--formular-->
+      <div class='card'> 
+        <div class='row'>
+          <div class='column'>
+            <h1 class='titlu'>Selecteaza masina</h1>
+            <div class='card2'>
+              <div class="custom-select">
+                <select >
+                  <option value="0">VW Passat</option>
+                  <option value="1">Ford Focus</option>
+                  <option value="2">Dacia Logan</option>
+                  <option value="3">Ford EcoSport</option>
+                  <option value="4">Skoda Rapid</option>
+                  <option value="5">VW Golf 7</option>
+                  <option value="6">Mercedees-Benz GLE</option>
+                  <option value="7">Cupra Formentor</option>
+                  <option value="8">Mercedes-Benz E200</option>
+                </select>
+              </div>
+
+              <script>
+              var x, i, j, l, ll, selElmnt, a, b, c;
+              x = document.getElementsByClassName("custom-select");
+              l = x.length;
+              for (i = 0; i <= l; i++) {
+                selElmnt = x[i].getElementsByTagName("select")[0];
+                ll = selElmnt.length;
+                a = document.createElement("DIV");
+                a.setAttribute("class", "select-selected");
+                a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+                x[i].appendChild(a);
+                b = document.createElement("DIV");
+                b.setAttribute("class", "select-items select-hide");
+                for (j = 0; j < ll; j++) {
+                  c = document.createElement("div");
+                  c.innerHTML = selElmnt.options[j].innerHTML;
+                  c.addEventListener("click", function(e) {
+                      var y, i, k, s, h, sl, yl;
+                      s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                      sl = s.length;
+                      h = this.parentNode.previousSibling;
+                      for (i = 0; i < sl; i++) {
+                        if (s.options[i].innerHTML == this.innerHTML) {
+                          
+                          s.selectedIndex = i;
+                          h.innerHTML = this.innerHTML;
+                          y = this.parentNode.getElementsByClassName("same-as-selected");
+                          yl = y.length;
+                          for (k = 0; k < yl; k++) {
+                            y[k].removeAttribute("class");
+                          }
+                          this.setAttribute("class", "same-as-selected");
+                          break;
+                        }
+                      }
+                      h.click();
+                  });
+                  b.appendChild(c);
+                }
+                x[i].appendChild(b);
+                a.addEventListener("click", function(e) {
+                    e.stopPropagation();
+                    closeAllSelect(this);
+                    this.nextSibling.classList.toggle("select-hide");
+                    this.classList.toggle("select-arrow-active");
+                  });
+              }
+              function closeAllSelect(elmnt) {
+                var x, y, i, xl, yl, arrNo = [];
+                x = document.getElementsByClassName("select-items");
+                y = document.getElementsByClassName("select-selected");
+                xl = x.length;
+                yl = y.length;
+                for (i = 0; i < yl; i++) {
+                  if (elmnt == y[i]) {
+                    arrNo.push(i)
+                  } else {
+                    y[i].classList.remove("select-arrow-active");
+                  }
+                }
+                for (i = 0; i < xl; i++) {
+                  if (arrNo.indexOf(i)) {
+                    x[i].classList.add("select-hide");
+                  }
+                }
+              }
+              document.addEventListener("click", closeAllSelect);
+              </script>
+
+              <img class='pmasina' src='/poze/vw passat.jpg' alt='poza masina'>
+              <div class="jos">
+                <div class="nvl">
+                  <i class="material-icons">directions_car</i>
+                  <p  class='iconsdet'> 2018
+                  </p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons">build</i>
+                  <p class='iconsdet'>2.0 TDI</p>
+                </div>
+                <div class="vl">
+                  <i class="material-icons">local_gas_station</i>
+                  <p class='iconsdet'>Diesel</p>
+                </div>
+              </div>
+            </div>
+            <h1 style='margin-top:1.1em; ' class='titlu'>Sumar rezervare </h1>
+            <div class="sumarcard">
+              <p class='sumarp primulp'>Pret:       <span style="color: #FDC029"><b>220</b></span> RON/Zi    <span style="color: #FDC029"><b>1100</b></span> RON/6 Zile</p>
+              <p class='sumarp'>Numar zile:   <b>6</b></p>
+              <p class='sumarp'>Garantie: <b>1500 RON</b></p>
+              <form action="/action_page.php" class='checkbox'>
+                <input type="checkbox" id="termeni" name="term&cond" >
+                <label for="termeni" class='sumarp'> Sunt de acord cu <span style="color: #FDC029">termenii si conditiile</span></label><br>
+              </form>
+            </div>
+          </div>
+          <div class='vlm'></div>
+          <div class='column'>
+            <div class='randdr'>
+              <h1 class='titlu'> Selecteaza detalii</h1>
+              <div class='coldr1'>
+                <form>
+                  <div class='collocdat'>
+                    <label for="fname" class='numetip'>Locatie preluare:</label><br>
+                    <input type="text" id="fname" name="fname" value="locatie" class='inttext'><br>
+                    <label for="fname" class='numetip'>Data preluare:</label>
+                    <input type="text" id="fname" name="fname" value="29/12/2022" class='inttext' >
+                    <label for="lname" class='numetip'>Locatie predare:</label><br>
+                    <input type="text" id="lname" name="lname" value="locatie" class='inttext'><br>
+                    <label for="fname" class='numetip'>Data predare:</label>
+                    <input type="text" id="fname" name="fname" value="30/12/2022" class='inttext'>
+                  </div>
+                  <div class='colora'>
+                    <label for="lname"class='oratip1'>Ora:</label><br>
+                    <input type="text" id="lname" name="lname" value="12:00" class='ora'><br>
+                    <label for="lname"class='oratip2' >Ora:</label><br>
+                    <input type="text" id="lname" name="lname" value="12:00" class='ora'><br>
+                  </div>
+                </form>
+              </div>
+              <div class='coldr2'>
+                <form>
+                  <label for="fname" style="margin-left: 1em;">Calculator pret:</label><br>
+                  <input type="text" id="fname" name="fname" value='220' style="color: #FDC029" class='pret'>
+                  <label for="fname" style="margin-left: 2em;">RON/1zi</label>
+                  <input type="text" id="lname" name="lname" value="1100" style="color: #FDC029" class='pret'>
+                  <label for="fname" style="margin-left: 2em;">RON/6zile</label><br><br><br><br><br>
+                </form>
+              </div>
+            </div>
+            <div class='randdrjos'>
+              <h1 class='titlu'> Date personale</h1>
+              <form class='datepers'>
+                <div class='coldrjos'>
+                  <label for="fname" class='dpname'>Nume:</label><br>
+                  <input type="text" id="fname" name="fname" class='dpspace'><br>
+                  <label for="fname" class='dpname'>Telefon:</label><br>
+                  <input type="text" id="fname" name="fname" class='dpspace'><br>
+                </div>
+                <div class='coldrjos'>
+                  <label for="fname" class='dpname'>Prenume:</label><br>
+                  <input type="text" id="fname" name="fname" class='dpspace'><br>
+                  <label for="fname" class='dpname'>E-mail:</label><br>
+                  <input type="text" id="fname" name="fname" class='dpspace'><br>
+                </div>
+                <label for="review" class='dpname'>Specificatii suplimentare:</label>
+                <textarea id="review" name="review" rows="4" cols="50" class='textspec'></textarea>
+              </form>
+            </div>
+          </div>
+        </div>
+        <a class="inchiriazab" href="inchiriat.html">Inchiriaza acum</a> 
+      </div>
+        <!--Footer-->
+        <div class="footer"> 
+          <div class='row'>
+            <div class='column2'>
+                <img class='logof' src='/poze/logo.png' alt='poza vaca'>
+                <p> Alege inteligent </p>
+            </div>
+            <div class='column'>
+                <p> Autovehicule populare:</p>
+                <a class="buttonft" href="gle.html">Mercedes GLE</a>
+                <a class="buttonft" href="passat.html">VW Passat</a>
+                <a class="buttonft" href="logan.html">Dacia Logan</a>
+                <a class="buttonft" href="focus.html">Ford Focus</a>
+            </div>  
+            <div class='column'>
+                <p> Link-uri utile:</p>
+                <a class="buttonft" href="contact.html">Contact</a>
+                <a class="buttonft" href="masini.html">Masini</a>
+                <a class="buttonft" href="firma.html">Firma</a>
+                <a class="buttonft" href="index.html">Acasa</a>
+            </div>
+            <div class='column2'>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/TelConIcon.png' alt='icon'>
+                <p> Telefon: 0755 123 456</p>
+              </div>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/MailConIcon.png' alt='icon'>
+                <p> E-mail: rentit@gmail.ro</p>
+              </div>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/LocIcon.png' alt='icon'>
+                <p> Calea Succesului nr. 19 <br>Oradea Bihor</p>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <p class='copyright'> Copyright webtim.srl </p>
+          </div>
+        </div>    
+    </body>
+</html>

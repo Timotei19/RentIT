@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RentIT</title>
+        <link type="text/css" rel='stylesheet' href="/css/pagini.css" >
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+        <!-- Navigatie -->
+        <nav>
+          <a href="index.html"> <img class="logoph" src="/poze/logo.png" alt="Logo"></a>
+            <ul>
+                <li><a class="nbutton" href="firma.html">Firma</a></li>
+                <li><a class="nbutton" href="masini.html">Masini</a></li>
+                <li><a class="nbutton" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburgermenu">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="menu">
+              <a class="button menuItem" href="index.html">Acasa</a>
+              <a class="button menuItem" href="firma.html">Firma</a>
+              <a class="button menuItem" href="masini.html">Masini</a>
+              <a class="button menuItem" href="contact.html">Contact</a>
+            </div>
+            <button class="hamburger">
+              <i class="menuIcon material-icons">menu</i>
+              <i class="closeIcon material-icons">close</i>
+            </button>
+  
+            <script>
+              const menu = document.querySelector(".menu");
+  const menuItems = document.querySelectorAll(".menuItem");
+  const hamburger= document.querySelector(".hamburger");
+  const closeIcon= document.querySelector(".closeIcon");
+  const menuIcon = document.querySelector(".menuIcon");
+  
+  function toggleMenu() {
+    if (menu.classList.contains("showMenu")) {
+      menu.classList.remove("showMenu");
+      closeIcon.style.display = "none";
+      menuIcon.style.display = "block";
+    } else {
+      menu.classList.add("showMenu");
+      closeIcon.style.display = "block";
+      menuIcon.style.display = "none";
+    }
+  }
+  
+  hamburger.addEventListener("click", toggleMenu);
+            </script>
+  
+         </div>
+
+         <!-- textul si imaginea alaturate -->   
+         <div class="row">
+            <div class="column">
+              <p class="desc">Închiriaza inteligent cu Rent IT.
+                Suntem o firma de închiriat mașini din Oradea
+                și dorim să revolutionam serviciile de rent-a-car
+                prin profesionalism si servicii inopinante.<br>
+                <br>
+                Închiriem mașini pentru toate nevoile 
+                dumneavoastra, de la masini luxoase la 
+                mașini 4x4, sport sau low-cost iar la comanda 
+                le putem aduce in locatia dorita.</p>
+            </div>
+            <div class="column">
+              <img class="descp" src="/poze/pozadesc.jpg"> 
+            </div>
+        </div>
+        <div class="row2">
+            <div class="column2">
+                <img class="descp2" src="/poze/firma2.jpg"> 
+            </div>
+            <div class="column2">
+                <p class="desc2">Percepem o garantie de 1000 RON,
+                   in caz de orice avarie garantia nu va fi returnata.
+                    Masina trebuie predata in starea in care a fost 
+                    primita.<br>
+                  <br>
+                  În caz ca sesizati orice neregula la primire
+                  va rugam sa ne sesizati pentru a remedia situatia.
+                  Masina trebuie predata cu aceeasi cantitate de combustibil,
+                  in caz contrar va vom taxa cu 10 RON/litru. </p>
+            </div>
+              
+        </div>
+
+
+        <!--Footer-->
+        <div class="footer"> 
+          <div class='row'>
+            <div class='column2'>
+                <img class='logof' src='/poze/logo.png' alt='poza vaca'>
+                <p> Alege inteligent </p>
+            </div>
+            <div class='column'>
+              <p> Autovehicule populare:</p>
+              <a class="buttonft" href="gle.html">Mercedes GLE</a>
+              <a class="buttonft" href="passat.html">VW Passat</a>
+              <a class="buttonft" href="logan.html">Dacia Logan</a>
+              <a class="buttonft" href="focus.html">Ford Focus</a>
+          </div> 
+            <div class='column'>
+                <p> Link-uri utile:</p>
+                <a class="buttonft" href="contact.html">Contact</a>
+                <a class="buttonft" href="masini.html">Masini</a>
+                <a class="buttonft" href="firma.html">Firma</a>
+                <a class="buttonft" href="index.html">Acasa</a>
+            </div>
+            <div class='column2'>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/TelConIcon.png' alt='icon'>
+                <p> Telefon: 0755 123 456</p>
+              </div>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/MailConIcon.png' alt='icon'>
+                <p> E-mail: rentit@gmail.ro</p>
+              </div>
+              <div class='rand1'>
+                <img class='imgcont' src='/icons/LocIcon.png' alt='icon'>
+                <p> Calea Succesului nr. 19 <br>Oradea Bihor</p>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <p class='copyright'> Copyright webtim.srl </p>
+          </div>
+        </div>    
+    </body>
+</html>
