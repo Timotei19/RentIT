@@ -111,7 +111,7 @@ nav ul a{
     width:70%;
     height: 12em;
     object-position: 100% 0;  
-    background: url('/poze/audibg.jpg') ; 
+    background: url('../poze/audibg.jpg') ; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
